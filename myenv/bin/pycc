@@ -1,0 +1,3 @@
+#!/Users/iqrabismi/Desktop/DMProject/myenv/bin/python3
+from numba.pycc import main
+main()
