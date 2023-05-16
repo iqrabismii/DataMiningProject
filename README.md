@@ -43,7 +43,7 @@ User-item based collaborative filtering is a popular recommendation technique th
 6. If you want Restaurant recommendation based on specific cuisine and city, run the following:
    <br> 
    <br>
-  python hybridmodel.py
+  python hybridmodel.py cuisinename cityname
   
    This will model uses knowledge based filtering provided by the user and then trained the model with relevant data, it takes 3-4 minutes to get the recommendations. 
 
