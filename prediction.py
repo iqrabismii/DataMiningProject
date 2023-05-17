@@ -101,22 +101,20 @@ class prediction:
 
         print(f'Top Recommended Restaurants for User {random_user_id}')
 
+     
+        
         print("---------------------")
         
-        count= 1
-        name= ""
-        for i ,j in recommendations_cf.iterrows():
-         
-          if name != j['name']:
-                  print(f'{count}. ', j['name'], end=' ')
-                  print('Location: ',j['city'], end=' ')
-                  print('Rating: ', j['rating_x'])
-                  print("\n")
-                  count += 1
-                  if count ==6:
-                    break
-        
-          name = j['name']
+    
+
+        count = 1
+        for i in recommendations_cf['name'].unique():
+            print(f'{count}. ', i)
+            count = count +1
+            print("\n")
+
+            if count == 6:
+                break
         
 
 
