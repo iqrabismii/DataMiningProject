@@ -23,36 +23,41 @@ Data is available [here](https://drive.google.com/drive/u/3/folders/1yqkt_0tDD9h
 ### Data Preprocessing 
 Data was preprocessed by removing null, duplicates and then taking only relevant features for the analysis. 
 
-### Steps to Dowload the file:
-1. Install the Python Anaconda Environment
-2. Download the zip folder from the repository
-3. Using the command prompt, navigate to the directory of the folder.
-4. To activate the environment. Run the following command. 
-   #### - For Windows:
-    path_to_myenv\Scripts\activate.bat
+## Steps to Dowload the file:
+### Installation
+Install the Python Anaconda Environment and download the zip folder from the repository.Using the command prompt, navigate to the directory of the folder.
 
-   ####  - For Unix/macOS:
-    source path_to_myenv/bin/activate
+### Create a Virtual Environment to insall dependencies
+
+#### For Mac, run the following command 
+
+1. python3 -m venv myenv
+2. source myenv/bin/activate
+
+#### For windows, run the following command
+1. python -m venv myenv
+2. myenv\Scripts\activate
+
     
-   #### To activate the virtual environment with the following command:
-    conda activate myenv
-    
-4. After this, run the following:
-   <br> 
-   <br>
+### To install dependencies, run the following:
    pip install -r requirements.txt
     
-5. If you want recommmendation for Chinese restaurant in Philadelphia, run the following:
-   <br> 
-   <br>
-  python prediction.py
-  
-6. If you want Restaurant recommendation based on specific cuisine and city, run the following:
-   <br> 
-   <br>
-  python hybridmodel.py cuisinename cityname
-  
-   This will model uses knowledge based filtering provided by the user and then trained the model with relevant data, it takes 3-4 minutes to get the recommendations. 
+### For Restaurant recommmendation for Chinese restaurant in Philadelphia, run the following command. This file takes the trained svd model pickle file.
+
+python prediction.py
+
+### For Restaurant recommendation based on specific cuisine and city, run the following command:
+
+python hybridmodel.py cuisinename, cityname
+
+For eg., python hybridmodel.py italian norristown
+
+This will model uses knowledge based filtering provided by the user and then trained the model with relevant data, it takes 3-4 minutes to get the recommendations.
+
+<br>
+
+------------------------------------------------------------------------------------------------------------------------------------
+
 
     
     
