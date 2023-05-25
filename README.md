@@ -27,6 +27,12 @@ Data was preprocessed by removing null, duplicates and then taking only relevant
 ### Installation
 Install the Python Anaconda Environment and download the zip folder from the repository.Using the command prompt, navigate to the directory of the folder.
 
+### For EDA 
+1. To download data, run the following command
+   python setup.py extract 
+2. To get visualisation and information about the data, run the following command
+    python source/data_preprocessing.py 
+
 ### Create a Virtual Environment to insall dependencies
 
 #### For Mac, run the following command 
